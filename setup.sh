@@ -21,10 +21,6 @@ $$  /   \$$ |\$$$$$$  |$$$$$$$$\       \$$$$$$  |$$$$$$$$\    $$ |   \$$$$$$  |$
 "
 echo "Iniciando a configuração do ambiente WSL..."
 
-# Etapa 1 - Atualizando o sistema
-echo "🔄 Atualizando pacotes..."
-sudo apt update && sudo apt full-upgrade -y
-
 # Etapa 2 - Configurando DNS fixo para WSL
 echo "🌐 Corrigindo DNS..."
 sudo rm /etc/resolv.conf
@@ -39,7 +35,7 @@ sudo apt install -y python-is-python3
 sudo apt install -y python3-pip
 python -m pip install --upgrade pip
 sudo apt install -y python3.11-venv
-sudo apt install -y wget curl git unzip
+sudo apt install -y wget curl unzip
 
 # Etapa 4 - Instalando Java JDK 21
 echo "☕ Instalando Java JDK 21..."
